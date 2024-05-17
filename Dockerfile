@@ -16,5 +16,5 @@ COPY src .
 # configure the container to run in an executed manner
 # ENTRYPOINT [ "python3", "app.py"]
 # CMD ["app.py" ]
-# CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
+# CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0 "]
 CMD uvicorn main:app --host 0.0.0.0 --port 8000
